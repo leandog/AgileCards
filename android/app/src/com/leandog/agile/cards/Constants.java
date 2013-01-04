@@ -1,4 +1,4 @@
-package com.leandog.team.tools;
+package com.leandog.agile.cards;
 
 
 public interface Constants {
