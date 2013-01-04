@@ -12,7 +12,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
-        android:src="@drawable/ic_card_6_thinking_hats" />
+        android:src="@drawable/ic_card_t_shirt_sizing" />
 
     <ImageView
         android:id="@+id/fist_to_five"
@@ -22,7 +22,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/otis"
         android:layout_margin="10dp"
-        android:src="@drawable/ic_card_6_thinking_hats" />
+        android:src="@drawable/ic_card_fist_to_five" />
 
     <ImageView
         android:id="@+id/collaberation_8"
@@ -31,7 +31,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/t_shirt_sizing"
         android:layout_margin="10dp"
-        android:src="@drawable/ic_card_6_thinking_hats" />
+        android:src="@drawable/ic_card_collaberate" />
 
     <ImageView
         android:id="@+id/thinking_hats"
