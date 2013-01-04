@@ -11,17 +11,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_margin="10dp"
+        style="@style/margins"
         android:src="@drawable/ic_card_t_shirt_sizing" />
 
     <ImageView
         android:id="@+id/fist_to_five"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/t_shirt_sizing"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/otis"
-        android:layout_margin="10dp"
+        style="@style/margins"
         android:src="@drawable/ic_card_fist_to_five" />
 
     <ImageView
@@ -30,25 +29,25 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/t_shirt_sizing"
-        android:layout_margin="10dp"
+        style="@style/margins"
         android:src="@drawable/ic_card_collaberate" />
 
     <ImageView
         android:id="@+id/thinking_hats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/collaberation_8"
         android:layout_below="@+id/t_shirt_sizing"
-        android:layout_margin="10dp"
+        style="@style/margins"
         android:src="@drawable/ic_card_6_thinking_hats" />
-    
-    <ImageView 
+
+    <ImageView
         android:id="@+id/chip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/chip"
-        />
+        style="@style/margins"
+        android:src="@drawable/chip" />
 
 </RelativeLayout>
