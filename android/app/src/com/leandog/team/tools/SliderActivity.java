@@ -33,10 +33,6 @@ public class SliderActivity extends Activity {
             title = getString(R.string.collaberation);
             cards = getResources().obtainTypedArray(R.array.collaberation);
             break;
-        case R.id.const_fibonacci:
-            title = getString(R.string.fibonacci);
-            cards = getResources().obtainTypedArray(R.array.fibonacci);
-            break;
         case R.id.const_fist_to_five:
             title = getString(R.string.fist_to_five);
             cards = getResources().obtainTypedArray(R.array.fist_to_five);

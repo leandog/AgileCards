@@ -2,6 +2,7 @@
 <resources>
 	<string-array name="fist_to_five">
 	    <item>@drawable/fingerrule</item>
+	    <item>@drawable/fist</item>
 	    <item>@drawable/finger1</item>
 	    <item>@drawable/finger2</item>
 	    <item>@drawable/finger3</item>
