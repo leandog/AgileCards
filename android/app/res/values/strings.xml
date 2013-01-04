@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LeanDog</string>
+    <string name="collaberation">Collaberation 8</string>
+    <string name="fibonacci">Fibonacci Story Sizing</string>
+    <string name="fist_to_five">Fist to Five</string>
+    <string name="thinking_hats">6 Thinking Hats</string>
+    <string name="tshirt">T-Shirt Story Sizing</string>
+
+</resources>

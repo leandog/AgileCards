@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="collaberation">
+	    <item>@drawable/collabrules</item>
+	    <item>@drawable/col_1</item>
+	    <item>@drawable/col_2</item>
+	    <item>@drawable/col_3</item>
+	    <item>@drawable/col_4</item>
+	    <item>@drawable/col_5</item>
+	    <item>@drawable/col_6</item>
+	    <item>@drawable/col_7</item>
+	    <item>@drawable/joker</item>
+	</string-array> 
+</resources>

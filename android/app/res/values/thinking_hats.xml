@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="thinking_hats">
+	    <item>@drawable/ruleshat</item>
+	    <item>@drawable/blackhat</item>
+	    <item>@drawable/yellowhat</item>
+	    <item>@drawable/greenhat</item>
+	    <item>@drawable/redhat</item>
+	    <item>@drawable/bluehat</item>
+	    <item>@drawable/whitehat</item>
+	</string-array> 
+</resources>

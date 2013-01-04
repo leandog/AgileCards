@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/t_shirt_sizing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_card_6_thinking_hats" />
+
+    <ImageView
+        android:id="@+id/fist_to_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/otis"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_card_6_thinking_hats" />
+
+    <ImageView
+        android:id="@+id/collaberation_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/t_shirt_sizing"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_card_6_thinking_hats" />
+
+    <ImageView
+        android:id="@+id/thinking_hats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/t_shirt_sizing"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_card_6_thinking_hats" />
+    
+    <ImageView 
+        android:id="@+id/chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/chip"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="const_collaberation_8" type="id"/>
+    <item name="const_thinking_hats" type="id"/>
+    <item name="const_fibonacci" type="id"/>
+    <item name="const_fist_to_five" type="id"/>
+    <item name="const_t_shirt_sizing" type="id"/>
+
+</resources>

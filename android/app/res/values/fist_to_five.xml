@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="fist_to_five">
+	    <item>@drawable/fingerrule</item>
+	    <item>@drawable/finger1</item>
+	    <item>@drawable/finger2</item>
+	    <item>@drawable/finger3</item>
+	    <item>@drawable/finger4</item>
+	    <item>@drawable/finger5</item>
+	</string-array> 
+</resources>
