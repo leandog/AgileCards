@@ -56,4 +56,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cucumber
   frank-cucumber
+  rspec
