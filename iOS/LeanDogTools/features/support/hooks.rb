@@ -1,5 +1,5 @@
 Before do
-  launch_app
+  launch_app './Frank/frankified_build/Frankified.app'
 end
 
 After do
