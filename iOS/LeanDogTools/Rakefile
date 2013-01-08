@@ -6,4 +6,10 @@ Cucumber::Rake::Task.new(:features) do |t|
   t.profile = 'default'
 end
 
-task :default => :features
+desc 'Build frank'
+task :build do
+    puts "Building frank..."
+      `frank build`
+end
+
+task :default => [:build, :features]
