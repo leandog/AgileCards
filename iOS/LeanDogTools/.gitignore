@@ -1,0 +1,14 @@
+*/DerivedData/
+.DS_Store
+Frank/frankified_build
+eriemobile_iphone/build
+xcuserdata
+*.xcodeproj/*.xcworkspace
+*.xcuserdatad
+.*.swp
+cucumber/TEST-*.xml
+*.xcuserstate
+.idea
+tags
+build
+Pods/
