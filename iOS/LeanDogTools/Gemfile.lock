@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/leviwilson/furter.git
+  revision: 29fe4a3442212ea703eb7a68ce94a4b07ad8cfaa
+  specs:
+    furter (0.0.1.5)
+      frank-cucumber (~> 1.1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -58,4 +65,5 @@ PLATFORMS
 DEPENDENCIES
   cucumber
   frank-cucumber
+  furter!
   rspec

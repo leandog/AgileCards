@@ -3,3 +3,4 @@ source :rubygems
 gem 'cucumber'
 gem 'rspec'
 gem 'frank-cucumber'
+gem 'furter', :git => 'https://github.com/leviwilson/furter.git'
