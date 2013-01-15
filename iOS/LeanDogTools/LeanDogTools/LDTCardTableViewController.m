@@ -30,21 +30,19 @@
     NSInteger xRight =  isIPhone5 ? 136 : 116;
     NSInteger yBottom = isIPhone5 ? 180 : 160;
     
-    [self addButtonWithFrame:CGRectMake(xLeft, yTop, width, height) tag:0 andImage:@"320TShirts.jpg"];
-    
-    [self addButtonWithFrame:CGRectMake(xRight, yTop, width, height) tag:1 andImage:@"320Fistof5.jpg"];
-    
-    [self addButtonWithFrame:CGRectMake(xLeft, yBottom, width, height) tag:2 andImage:@"320Collaboration.jpg"];
-    
-    [self addButtonWithFrame:CGRectMake(xRight, yBottom, width, height) tag:3 andImage:@"320ThinkingHat.jpg"];
+    [self addButtonWithFrame:CGRectMake(xLeft, yTop, width, height) tag:0 label:@"T-Shirts" andImage:@"320TShirts.jpg"];
+    [self addButtonWithFrame:CGRectMake(xRight, yTop, width, height) tag:1 label:@"Fist to 5" andImage:@"320Fistof5.jpg"];
+    [self addButtonWithFrame:CGRectMake(xLeft, yBottom, width, height) tag:2 label:@"Collaboration" andImage:@"320Collaboration.jpg"];
+    [self addButtonWithFrame:CGRectMake(xRight, yBottom, width, height) tag:3 label:@"Thinking Hats" andImage:@"320ThinkingHat.jpg"];
 }
 
-- (void)addButtonWithFrame:(CGRect)frame tag:(NSInteger)tag andImage:(NSString*)imageName
+- (void)addButtonWithFrame:(CGRect)frame tag:(NSInteger)tag label:(NSString *)label andImage:(NSString*)imageName
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = frame;
     button.tag = tag;
     button.backgroundColor = [UIColor clearColor];
+    button.accessibilityLabel = label;
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonWasClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
