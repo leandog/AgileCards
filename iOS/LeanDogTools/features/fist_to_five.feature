@@ -5,4 +5,12 @@ Feature: Fist to Five
 
   Scenario: Getting the directions
     Given I choose to see the "Fist to 5" deck
-    Then I see the Fist to 5 "Rules of the Game"
+    Then I see the "Rules" card
+
+  Scenario: Swiping to next card
+    Given I choose to see the "Fist to 5" deck
+    Then I see the "Rules" card
+    And I do not see the "3/Okay" card
+    When I swipe left four times
+    Then I see the "3/Okay" card
+    And I do not see the "Rules" card
