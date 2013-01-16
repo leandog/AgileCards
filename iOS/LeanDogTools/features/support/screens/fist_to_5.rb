@@ -3,6 +3,15 @@ class FistTo5
 
   view :instruction_card, :label => 'fist_0'
 
+  class <<self
+    include Frank::Cucumber::FrankHelper
+  end
+  def self.current_page
+    x_offset = frankly_map('view:"UIScrollView"', 'contentOffset').first["x"]
+    page_width = frankly_map('view:"UIScrollView"', 'frame').first["size"]["width"]
+    (x_offset / page_width).to_i
+  end
+
   class Card
     include Frank::Cucumber::FrankHelper
 
@@ -11,11 +20,7 @@ class FistTo5
     end
 
     def visible?
-      x_offset = frankly_map('view:"UIScrollView"', 'contentOffset').first["x"]
-      page_width = frankly_map('view:"UIScrollView"', 'frame').first["size"]["width"]
-      current_page = x_offset / page_width
-
-      current_page == @which
+      FistTo5.current_page == @which
     end
   end
 
@@ -29,4 +34,19 @@ class FistTo5
       raise "Unknown card named '#{name}'"
     end
   end
+
+  def swipe_left
+    from = 'view:"UIScrollView"'
+    frame = accessibility_frame(from)
+
+    # We don't have access to very useful primitives, and PublicAutomation seems to work
+    # around the scroll view's snapping to page boundaries, so this is approximate.
+    frankly_map(from, 'FEX_dragWithInitialDelayToX:y:', 0, frame.center.y)
+    sleep 0.3
+    frankly_map(from, 'FEX_dragWithInitialDelayToX:y:', 0, frame.center.y)
+    sleep 0.3
+    frankly_map(from, 'FEX_dragWithInitialDelayToX:y:', frame.center.x / 4 * 3, frame.center.y)
+    sleep 0.3
+  end
+
 end

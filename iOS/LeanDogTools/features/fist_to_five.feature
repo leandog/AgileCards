@@ -11,6 +11,6 @@ Feature: Fist to Five
     Given I choose to see the "Fist to 5" deck
     Then I see the "Rules" card
     And I do not see the "3/Okay" card
-    When I swipe left four times
+    When I swipe left 4 times
     Then I see the "3/Okay" card
     And I do not see the "Rules" card
