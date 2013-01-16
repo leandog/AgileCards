@@ -45,6 +45,7 @@
         CGRect frame = imageView.frame;
         frame.origin = CGPointMake(i * widthOfImage, 0);
         imageView.frame = frame;
+        imageView.accessibilityLabel = [NSString stringWithFormat:@"%@_%d.jpg", self.imagePrefix, i];
         
         [self.scrollView addSubview:imageView];
     }
