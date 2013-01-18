@@ -18,7 +18,7 @@ public class HomeActivity extends Activity {
     }
 
     private void showGame(int gameId) {
-        Intent intent = new Intent(getBaseContext(), SliderActivity.class);
+        Intent intent = new Intent(this, SliderActivity.class);
         intent.putExtra(Constants.CARDS, gameId);
         startActivity(intent);
     }
