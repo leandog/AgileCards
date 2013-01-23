@@ -51,6 +51,12 @@ public class HomeActivityTest extends ActivityUnitTestCase<HomeActivity> {
         assertEquals(getSliderActivitesClassName(), getStartedActivitysComponentClassName());
     }
 
+    public void test_clicking_on_thinking_hats_starts_slider_activity_thinking_hats() {
+        startActivity(new Intent(), null, null);
+        getActivity().findViewById(R.id.thinking_hats).performClick();
+        assertEquals(R.id.const_thinking_hats, getStartedActivityIntent().getIntExtra(Constants.CARDS, -1));
+    }
+
     private String getStartedActivitysComponentClassName() {
         return getStartedActivityIntent().getComponent().getClassName();
     }
