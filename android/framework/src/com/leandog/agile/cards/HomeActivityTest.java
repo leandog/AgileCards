@@ -27,6 +27,12 @@ public class HomeActivityTest extends ActivityUnitTestCase<HomeActivity> {
         assertEquals(getSliderActivitesClassName(), getStartedActivitysComponentClassName());
     }
 
+    public void test_clicking_on_fist_to_five_starts_slider_activity_for_fist_to_five() {
+        startActivity(new Intent(), null, null);
+        getActivity().findViewById(R.id.fist_to_five).performClick();
+        assertEquals(R.id.const_fist_to_five, getStartedActivityIntent().getIntExtra(Constants.CARDS, -1));
+    }
+
     public void test_clicking_on_collaberation_8_starts_slider_activity() {
         startActivity(new Intent(), null, null);
         getActivity().findViewById(R.id.collaberation_8).performClick();
