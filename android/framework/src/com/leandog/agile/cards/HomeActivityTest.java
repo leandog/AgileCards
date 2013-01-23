@@ -39,6 +39,12 @@ public class HomeActivityTest extends ActivityUnitTestCase<HomeActivity> {
         assertEquals(getSliderActivitesClassName(), getStartedActivitysComponentClassName());
     }
 
+    public void test_clicking_on_collaberation_8_starts_slider_activity_collaberation_8() {
+        startActivity(new Intent(), null, null);
+        getActivity().findViewById(R.id.collaberation_8).performClick();
+        assertEquals(R.id.const_collaberation_8, getStartedActivityIntent().getIntExtra(Constants.CARDS, -1));
+    }
+
     public void test_clicking_on_thinking_hats_starts_slider_activity() {
         startActivity(new Intent(), null, null);
         getActivity().findViewById(R.id.thinking_hats).performClick();
