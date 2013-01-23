@@ -12,31 +12,31 @@ public class HomeActivityTest extends ActivityUnitTestCase<HomeActivity> {
     public void test_clicking_on_t_shirt_sizing_starts_slider_activity() {
         startActivity(new Intent(), null, null);
         getActivity().findViewById(R.id.t_shirt_sizing).performClick();
-        assertEquals(getStartedActivitysComponentClassName(), getSliderActivitesClassName()); 
+        assertEquals(getSliderActivitesClassName(), getStartedActivitysComponentClassName());
     }
 
     public void test_clicking_on_t_shirt_sizing_starts_slider_activity_for_t_shirts() {
         startActivity(new Intent(), null, null);
         getActivity().findViewById(R.id.t_shirt_sizing).performClick();
-        assertEquals(getStartedActivityIntent().getIntExtra(Constants.CARDS, -1), R.id.const_t_shirt_sizing); 
+        assertEquals(R.id.const_t_shirt_sizing, getStartedActivityIntent().getIntExtra(Constants.CARDS, -1));
     }
-    
+
     public void test_clicking_on_fist_to_five_starts_slider_activity() {
         startActivity(new Intent(), null, null);
         getActivity().findViewById(R.id.fist_to_five).performClick();
-        assertEquals(getStartedActivitysComponentClassName(), getSliderActivitesClassName()); 
+        assertEquals(getSliderActivitesClassName(), getStartedActivitysComponentClassName());
     }
-    
+
     public void test_clicking_on_collaberation_8_starts_slider_activity() {
         startActivity(new Intent(), null, null);
         getActivity().findViewById(R.id.collaberation_8).performClick();
-        assertEquals(getStartedActivitysComponentClassName(), getSliderActivitesClassName()); 
+        assertEquals(getSliderActivitesClassName(), getStartedActivitysComponentClassName());
     }
-    
+
     public void test_clicking_on_thinking_hats_starts_slider_activity() {
         startActivity(new Intent(), null, null);
         getActivity().findViewById(R.id.thinking_hats).performClick();
-        assertEquals(getStartedActivitysComponentClassName(), getSliderActivitesClassName()); 
+        assertEquals(getSliderActivitesClassName(), getStartedActivitysComponentClassName());
     }
 
     private String getStartedActivitysComponentClassName() {
