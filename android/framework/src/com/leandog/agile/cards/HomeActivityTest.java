@@ -14,6 +14,12 @@ public class HomeActivityTest extends ActivityUnitTestCase<HomeActivity> {
         getActivity().findViewById(R.id.t_shirt_sizing).performClick();
         assertEquals(getStartedActivitysComponentClassName(), getSliderActivitesClassName()); 
     }
+
+    public void test_clicking_on_t_shirt_sizing_starts_slider_activity_for_t_shirts() {
+        startActivity(new Intent(), null, null);
+        getActivity().findViewById(R.id.t_shirt_sizing).performClick();
+        assertEquals(getStartedActivityIntent().getIntExtra(Constants.CARDS, -1), R.id.const_t_shirt_sizing); 
+    }
     
     public void test_clicking_on_fist_to_five_starts_slider_activity() {
         startActivity(new Intent(), null, null);
