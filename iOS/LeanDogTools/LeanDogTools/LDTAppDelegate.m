@@ -10,8 +10,8 @@
     LDTCardTableViewController *rootViewController = [[LDTCardTableViewController alloc]initWithNibName:nil bundle:nil];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
-    
-    navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
+    navigationController.navigationBar.translucent = NO;
     
     self.window.rootViewController = navigationController;
     
