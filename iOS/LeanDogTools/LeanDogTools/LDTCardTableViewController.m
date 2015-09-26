@@ -71,7 +71,7 @@
 
 - (IBAction)discussionGuideButtonClick:(UIButton *)button
 {
-    NSURL *url = [NSURL URLWithString:@"http://www.leandog.com/dogtreats"];
+    NSURL *url = [NSURL URLWithString:@"http://www.leandog.com/downloads/"];
     [[UIApplication sharedApplication] openURL:url];
 }
 
@@ -108,7 +108,7 @@
     if(imagePrefix && cardCount && title) {
         LDTCardDeckViewController *ctlr = [[LDTCardDeckViewController alloc] initWithTitle:title imagePrefix:imagePrefix andCardCount:cardCount];
         
-        UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Agile Tools" style:UIBarButtonItemStyleBordered target:nil action:nil];
+        UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Agile Tools" style:UIBarButtonItemStylePlain target:nil action:nil];
         self.navigationItem.backBarButtonItem = backButtonItem;
         [self.navigationController pushViewController:ctlr animated:YES];
     }
